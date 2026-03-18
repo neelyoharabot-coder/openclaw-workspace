@@ -11,3 +11,8 @@ memory/email/*.log
 
 # ClawHub skill install lock (ignore = don’t commit; commit instead if you want pinned skills)
 .clawhub/
+
+# Secrets — never commit
+.env
+.env.*
+*.pem
