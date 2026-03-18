@@ -8,3 +8,6 @@ memory/email/*.log
 
 # Local OpenClaw UI state (optional)
 .openclaw/
+
+# ClawHub skill install lock (ignore = don’t commit; commit instead if you want pinned skills)
+.clawhub/

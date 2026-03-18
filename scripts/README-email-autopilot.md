@@ -27,5 +27,6 @@ Edit the plist if your home path or workspace path differs.
 | `GOG_ACCOUNT` | `neelyohara.bot@gmail.com` |
 | `GOG_BIN` | Set in LaunchAgent to `/opt/homebrew/bin/gog` (use `/usr/local/bin/gog` on Intel Homebrew) |
 | `NEELY_DESKTOP_LOG` | Default: `~/Desktop/NeelyEmailLog` — human-readable log of each inbound + reply |
+| `OPENAI_PREFER_RESPONSES_API` | If `1` / `true`, try `/v1/responses` before chat completions (default: chat first, then responses fallback) |
 
 If Neely **stops replying**, check `~/.openclaw/logs/email-autopilot.err.log` — usually `gog` not found (fix `GOG_BIN` / PATH).
