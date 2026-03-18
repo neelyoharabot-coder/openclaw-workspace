@@ -7,6 +7,8 @@ _Learn about the person you're helping. Update this as you go._
 - **Pronouns:** 
 - **Timezone:** America/Los_Angeles
 - **Notes:**
+- **GitHub (Neely / bot work):** `@neelyoharabot-coder` — https://github.com/neelyoharabot-coder  
+  **Commits in this repo:** `Neely O'Hara` + `269069941+neelyoharabot-coder@users.noreply.github.com` (GitHub noreply — links commits to that account). Global Git on this Mac can stay Steve for other projects.
 
 ## Context
 
