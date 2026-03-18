@@ -1,0 +1,10 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+
+# Email logs (PII — do not commit)
+memory/email/*.log
+
+# Local OpenClaw UI state (optional)
+.openclaw/
