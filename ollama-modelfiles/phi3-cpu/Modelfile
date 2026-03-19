@@ -1,0 +1,5 @@
+FROM phi3:latest
+
+# Disable GPU/Metal; keep CPU-only for environments where Metal fails.
+PARAMETER num_gpu 0
+
