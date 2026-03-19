@@ -89,7 +89,7 @@ async function start() {
   setStatus("Microphone ready. When you speak, I will respond.");
   btn.textContent = "End Chat";
 
-  const tick = async () => {
+  const tick = () => {
     if (!analyser) return;
     analyser.getByteTimeDomainData(dataArray);
     const rms = rmsFromTimeDomainData(dataArray);

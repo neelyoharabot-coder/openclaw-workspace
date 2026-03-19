@@ -429,7 +429,11 @@ async function sendGmailViaGog({ to, subject, body }) {
     "-",
   ];
 
-  const p = spawn(OPENCLAW_CLI === "openclaw" ? "gog" : "gog", args, {
+  // If OPENCLAW_CLI is overridden to a path (e.g. a venv/bin/openclaw),
+  // prefer a sibling `gog` binary in the same folder; otherwise rely on PATH.
+  const gogCli =
+    OPENCLAW_CLI === "openclaw" ? "gog" : path.join(path.dirname(OPENCLAW_CLI), "gog");
+  const p = spawn(gogCli, args, {
     cwd: WORKSPACE_ROOT,
     stdio: ["pipe", "pipe", "pipe"],
   });
